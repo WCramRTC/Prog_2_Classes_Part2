@@ -7,29 +7,63 @@ using System.Windows.Controls;
 
 namespace Prog_2_Classes_Part2
 {
-    internal class Bass
+    public class Bass // Change Access Modifer To Public
     {
 
         // Fields
-        public string _brand;
-        public string _name;
-        public string _numberOfStrings;
-        public decimal _price;
-        public string _color;
-        public int _count;
+        string _brand;
+        string _name;
+        string _numberOfStrings;
+        decimal _price;
+        string _color;
+        int _count;
 
-        // Constructor
+        // Constructor - That enforces that any new bass will have AT LEAST a brand, name, number of strings, color
+        public Bass(string brand, string name, string numberOfStrings, string color) // Default Constructor
+        {
+            _brand = brand;
+            _name = name;
+            _numberOfStrings = numberOfStrings;
+            _color = color;
+        }
 
-        
+        //// Default Constuctor
+        //public Bass()
+        //{
 
-        // string
+        //}
 
-        /*
-         * 	- Brand
-            - Name
-            - Amount of Strings
-            - Price
-         */
+        // Properties - Is A method that gives / restricts acccess to a field
+        // access modifer - return type ( same type on field ) , name of the field, no underscore Upper Case
+        public string Brand
+        {
+            // get; set; 
+            get
+            {
+                return _brand;
+            }
+            set
+            {
+                _brand = value;
+            }
+            //set
+            //{
+            //    _brand = value;
+            //}
+        }
+
+        public string Name { get => _name; set => _name = value; }
+        public string NumberOfStrings { get => _numberOfStrings; set => _numberOfStrings = value; }
+        public decimal Price { get => _price; set => _price = value; }
+        public string Color { get => _color; set => _color = value; }
+        public int Count { get => _count; set => _count = value; }
+
+        // Methods
+
+        public decimal CalculateCost()
+        {
+            return _count * _price;
+        }
 
     }
 }

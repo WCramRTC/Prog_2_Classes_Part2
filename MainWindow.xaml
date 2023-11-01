@@ -7,6 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <RichTextBox Margin="358,36,93,36">
+            <FlowDocument>
+                <Paragraph>
+                    <Run x:Name="rtbDisplay" />
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
 
     </Grid>
 </Window>

@@ -14,6 +14,7 @@ Add a class: Right Click -> Add -> Class
 
 1. Singular Case
 2. Starts Upper Case
+3. Change Access Modifer To Public
 
 ### Fields
 * Keep Them Private
@@ -23,6 +24,18 @@ Add a class: Right Click -> Add -> Class
 ### Constructor
 - Is used when creating a new instance of an object
 - The way to enforce what data is need to create a new object
+- Format : public CLASS NAME (Parameters)
+- Default Constructor Has No Paremeters
+- Creating constructor WITH parameters automaticaly gets rid of default constructor
+- You can also create a default constructor
+
+### Properties
+
+### Class Methods
+
+- Are Built inside of a method to work with encapsulated fields
+- They have access to all private fields, and can work with them, but restrict access to the private information
+
 
 ---
 
