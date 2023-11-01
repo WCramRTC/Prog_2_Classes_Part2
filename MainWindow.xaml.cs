@@ -23,6 +23,12 @@ namespace Prog_2_Classes_Part2
         public MainWindow()
         {
             InitializeComponent();
-        }
-    }
-}
+
+
+
+
+        } // MainWindow()
+
+    } // class
+
+} // namespace

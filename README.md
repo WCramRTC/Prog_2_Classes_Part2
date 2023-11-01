@@ -19,7 +19,10 @@ Add a class: Right Click -> Add -> Class
 * Keep Them Private
 * the name starts with a underscore _, as a naming convent  
 	You won't get an error, but everyone does it, so you easily recognize when you work with a field
-
+	
+### Constructor
+- Is used when creating a new instance of an object
+- The way to enforce what data is need to create a new object
 
 ---
 
